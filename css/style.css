@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --primary-color: #c72092;
+    --secondary-color: #6c14d0;
+    --gradient-color: linear-gradient(to right,#c72092 , #6c14d0);
+    --bg-color: #fff;
+    --text-color: #000;
+}
+body{
+    scroll-behavior: smooth !important;
+}
+section{
+    margin-top: 10vh;
+    padding-top: 10vh;
+}
+.primary-btn{
+    background: var(--gradient-color);
+}
+.secondary-btn{
+  border: 1px solid var(--primary-color) !important;
+  color: var(--primary-color) !important;
+  box-shadow: 0 0px 15px #c72092 !important;
+}
+.secondary-btn:hover{
+    border: 1px solid transparent !important;
+    color: var(--bg-color) !important;
+    background: var(--primary-color) !important;
+  }
+.common-heading h1{
+    color: var(--primary-color);
+    font-size: 4rem;
+}
+.common-heading span{
+    color: var(--secondary-color);
+    font-family: mv boli;
+    font-size: 4rem;
+}
+/* ---------- Navbar ---------- */
+.navbar{
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.4);
+}
+.navbar-brand{
+    color: var(--primary-color) !important;
+    font-family: mv boli;
+    font-size: 2rem !important;
+}
+.navbar-brand span{
+    color: var(--secondary-color) !important;
+    font-family: mv boli;
+}
+.navbar .nav-link{
+    color: var(--text-color) !important;
+}
+.navbar .nav-link::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: var(--primary-color);
+    margin: auto;
+    transition: 0.3s linear;
+}
+.navbar .nav-link:hover::after{
+    width: 100%;
+}
+/* ---------- Home ---------- */
+.home-section{
+   width: 100%;
+   height: 100vh;
+   margin-top: 0;
+}
+.h-content h1{
+    font-size: 6rem;
+    color: var(--primary-color);
+    font-family: mv boli;
+}
+.h-content h1 span{
+    color: var(--secondary-color) !important;
+    font-family: mv boli;
+}
+/* ---------- About ---------- */
+.about-section{
+    margin-top: 0;
+}
+.a-btn{
+    width: 150px;
+    background: var(--gradient-color);
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+.a-btn:hover{
+    transform: scale(1.07);
+}
+/* ---------- Product ---------- */
+.product-card{
+   border: 2px solid var(--secondary-color);
+   box-shadow: 0 0 20px var(--primary-color);
+   cursor: pointer;
+}
+.p-img{
+    width: 75% !important;
+    margin: auto;
+}
+.p-img img{
+    width: 100% !important;
+    margin: auto;
+    transition: 0.2s linear;
+}
+.p-img img:hover{
+    transform: scale(1.05);
+}
+.product-card h3{
+   color: var(--primary-color);
+}
+.star{
+   color: rgb(197, 163, 11);
+   font-size: 1.1rem;
+}
+/* ---------- services ---------- */
+.services-card{
+    padding-top: 3rem;
+}
+.services-card i{
+    font-size: 4rem;
+    margin-bottom: 10px;
+    color: orange;
+}
+/* ---------- contect ---------- */
+.contect-section{
+    background: var(--primary-color);
+}
+
+/* ---------- footer ---------- */
+.footer{
+    background: var(--primary-color);
+   padding-top: 1rem;
+}
